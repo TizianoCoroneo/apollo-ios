@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 extension String {
   enum ApolloStringError: Error {
     case expectedSuffixMissing(_ suffix: String)
@@ -13,3 +16,5 @@ extension String {
     return String(self.dropLast(suffix.count))
   }
 }
+
+#endif

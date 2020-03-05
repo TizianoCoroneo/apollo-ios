@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 /// A type to generate code for.
 class ASTTypeUsed: Codable {
   
@@ -32,3 +35,5 @@ class ASTTypeUsed: Codable {
   /// [optional] Any fields used on this type
   let fields: [ASTTypeUsed.Field]?
 }
+
+#endif

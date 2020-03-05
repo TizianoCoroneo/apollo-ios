@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 extension Optional where Wrapped == Bool {
   
   var apollo_boolValue: Bool {
@@ -11,3 +14,5 @@ extension Optional where Wrapped == Bool {
     }
   }
 }
+
+#endif

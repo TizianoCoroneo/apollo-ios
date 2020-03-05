@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 // Adapted from Combine's `TopLevelDecoder` protocol to allow easy swapping of
 // decoders which decode in similar fashions.
 public protocol FlexibleDecoder {
@@ -28,3 +31,5 @@ extension Decodable {
     return try decoder.decode(Self.self, from: data)
   }
 }
+
+#endif

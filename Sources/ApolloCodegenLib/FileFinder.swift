@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 public struct FileFinder {
     
     public static func findParentFolder(from filePath: StaticString = #file) -> URL {
@@ -11,3 +14,5 @@ public struct FileFinder {
         return url.deletingLastPathComponent()
     }
 }
+
+#endif

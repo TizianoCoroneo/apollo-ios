@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 /// The representation of a single operation defined in a .graphql file.
 class ASTOperation: Codable {
   
@@ -55,3 +58,5 @@ class ASTOperation: Codable {
   /// [optional] The calculated ID for the operation. Will only be generated if `operationIDsURL` is passed into `ApolloCodegenOptions`.`
   let operationId: String?
 }
+
+#endif

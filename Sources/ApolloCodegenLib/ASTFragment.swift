@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 /// A resuable fragment to generate code for
 class ASTFragment: Codable {
   /// The primary type the fragment is defined on
@@ -41,3 +44,5 @@ class ASTInlineFragment: Codable {
   /// The names of any named fragments at this level of the fragment.
   let fragmentSpreads: [String]
 }
+
+#endif

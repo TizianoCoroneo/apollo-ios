@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 /// Readability helpers for accessing frequent folders.
 struct ApolloFilePathHelper {
   
@@ -38,3 +41,5 @@ struct ApolloFilePathHelper {
     return apolloFolderURL.appendingPathComponent(".shasum")
   }
 }
+
+#endif

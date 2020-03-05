@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 /// Helper to get logs printing to stdout so they can be read from the command line.
 public struct CodegenLogger {
   public enum LogLevel: Int {
@@ -50,3 +53,5 @@ extension FileHandle: TextOutputStream {
     self.write(data)
   }
 }
+
+#endif

@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 /// Placeholder typealias while this is getting added to tooling
 typealias ASTVariableType = String
 
@@ -60,3 +63,5 @@ class ASTForthcomingVariableType: Codable {
     }
   }
 }
+
+#endif

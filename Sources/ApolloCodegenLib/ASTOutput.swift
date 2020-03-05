@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 /// The top-level output of the AST generator
 class ASTOutput: Codable {
   /// An array of all operations to generate code for.
@@ -11,3 +14,5 @@ class ASTOutput: Codable {
   /// An array of "all" types used <-- TODO: Figure out why some are not in here
   let typesUsed: [ASTTypeUsed]
 }
+
+#endif

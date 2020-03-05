@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 extension StaticString {
   
   var apollo_lastPathComponent: String {
@@ -12,3 +15,5 @@ extension StaticString {
     }
   }
 }
+
+#endif

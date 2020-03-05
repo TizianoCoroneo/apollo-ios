@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 /// A field with data on any item.
 class ASTField: Codable {
   
@@ -45,3 +48,5 @@ class ASTField: Codable {
   /// [optional] Any Fragments defined inline at this level
   let inlineFragments: [ASTInlineFragment]?
 }
+
+#endif

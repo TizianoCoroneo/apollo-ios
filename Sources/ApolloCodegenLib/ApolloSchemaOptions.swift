@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 /// Options for running the Apollo Schema Downloader.
 public struct ApolloSchemaOptions {
   
@@ -66,3 +69,5 @@ extension ApolloSchemaOptions: CustomDebugStringConvertible {
     self.arguments.joined(separator: "\n")
   }
 }
+
+#endif

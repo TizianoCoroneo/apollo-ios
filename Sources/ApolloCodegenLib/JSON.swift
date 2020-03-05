@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 // MARK: - JSONValue
 
 public enum JSONValue: Codable, Equatable {
@@ -178,3 +181,5 @@ public enum JSONValue: Codable, Equatable {
     }
   }
 }
+
+#endif

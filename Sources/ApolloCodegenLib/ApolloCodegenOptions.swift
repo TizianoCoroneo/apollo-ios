@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 /// An object to hold all the various options for running codegen
 public struct ApolloCodegenOptions {
   
@@ -177,3 +180,5 @@ extension ApolloCodegenOptions: CustomDebugStringConvertible {
     self.arguments.joined(separator: "\n")
   }
 }
+
+#endif

@@ -1,6 +1,9 @@
 import Foundation
 import CommonCrypto
 
+// Only available on macOS
+#if os(macOS)
+
 public extension FileManager {
 
   /// Checks if a file exists (and is not a folder) at the given path
@@ -131,3 +134,5 @@ public extension FileManager {
       .joined()
   }
 }
+
+#endif
