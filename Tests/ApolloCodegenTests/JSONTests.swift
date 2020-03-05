@@ -9,6 +9,9 @@
 import XCTest
 import ApolloCodegenLib
 
+// Only available on macOS
+#if os(macOS)
+
 class JSONContainerTests: XCTestCase {
     
     func testSingleLevelDictionary() throws {
@@ -208,3 +211,5 @@ class JSONContainerTests: XCTestCase {
     }
   }
 }
+
+#endif

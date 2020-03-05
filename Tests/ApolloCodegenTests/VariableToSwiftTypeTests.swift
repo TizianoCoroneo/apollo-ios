@@ -9,6 +9,9 @@
 import XCTest
 @testable import ApolloCodegenLib
 
+// Only available on macOS
+#if os(macOS)
+
 class VariableToSwiftTypeTests: XCTestCase {
   
   func testNullableEnum() throws {
@@ -369,3 +372,5 @@ class VariableToSwiftTypeTests: XCTestCase {
     XCTAssertEqual(try variable.toSwiftType(), "[Character]")
   }
 }
+
+#endif

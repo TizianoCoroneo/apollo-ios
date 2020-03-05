@@ -9,6 +9,9 @@
 import XCTest
 @testable import ApolloCodegenLib
 
+// Only available on macOS
+#if os(macOS)
+
 class ApolloSchemaTests: XCTestCase {
   
   private lazy var endpointURL = URL(string: "http://localhost:8080/graphql")!
@@ -122,3 +125,5 @@ class ApolloSchemaTests: XCTestCase {
     XCTAssertFalse(FileManager.default.apollo_fileExists(at: options.outputURL))
   }
 }
+
+#endif

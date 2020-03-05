@@ -1,5 +1,8 @@
 import Foundation
 
+// Only available on macOS
+#if os(macOS)
+
 enum ConvenienceEncodingError: Error {
     case couldntConvertDataToString
     case couldntConvertStringToData
@@ -36,3 +39,5 @@ public extension Decodable {
         self = try decoder.decode(Self.self, from: data)
     }
 }
+
+#endif

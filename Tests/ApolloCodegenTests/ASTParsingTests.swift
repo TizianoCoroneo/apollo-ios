@@ -9,6 +9,9 @@
 import XCTest
 @testable import ApolloCodegenLib
 
+// Only available on macOS
+#if os(macOS)
+
 class ASTParsingTests: XCTestCase {
   
   lazy var starWarsJSONURL: URL = {
@@ -786,3 +789,5 @@ query TwoHeroes {\n  r2: hero {\n    __typename\n    name\n  }\n  luke: hero(epi
     }
   }
 }
+
+#endif

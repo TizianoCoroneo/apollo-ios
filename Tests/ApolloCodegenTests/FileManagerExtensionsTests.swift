@@ -10,6 +10,9 @@ import Foundation
 import XCTest
 @testable import ApolloCodegenLib
 
+// Only available on macOS
+#if os(macOS)
+
 class FileManagerExtensionsTests: XCTestCase {
   
   override func setUp() {
@@ -48,3 +51,4 @@ class FileManagerExtensionsTests: XCTestCase {
   }
 }
 
+#endif

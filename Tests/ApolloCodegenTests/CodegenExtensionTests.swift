@@ -9,6 +9,9 @@
 import XCTest
 @testable import ApolloCodegenLib
 
+// Only available on macOS
+#if os(macOS)
+
 class CodegenExtensionTests: XCTestCase {
   
   // MARK: - Optional Boolean
@@ -52,3 +55,5 @@ class CodegenExtensionTests: XCTestCase {
   }
   
 }
+
+#endif

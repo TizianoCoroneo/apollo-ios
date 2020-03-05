@@ -9,6 +9,9 @@
 @testable import ApolloCodegenLib
 import XCTest
 
+// Only available on macOS
+#if os(macOS)
+
 class CLIDownloaderTests: XCTestCase {
   
   func testRedownloading() throws {
@@ -43,3 +46,4 @@ class CLIDownloaderTests: XCTestCase {
   }
 }
 
+#endif

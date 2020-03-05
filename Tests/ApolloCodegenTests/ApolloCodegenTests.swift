@@ -9,6 +9,9 @@
 import XCTest
 @testable import ApolloCodegenLib
 
+// Only available on macOS
+#if os(macOS)
+
 class ApolloCodegenTests: XCTestCase {
   
   override func setUp() {
@@ -151,3 +154,5 @@ class ApolloCodegenTests: XCTestCase {
     XCTAssertEqual(contents.count, 17)
   }
 }
+
+#endif

@@ -9,6 +9,9 @@
 import XCTest
 @testable import ApolloCodegenLib
 
+// Only available on macOS
+#if os(macOS)
+
 struct CodegenTestHelper {
   
   // Centralized timeout for adjustment when working on terrible wifi
@@ -106,3 +109,5 @@ struct CodegenTestHelper {
                                    contents: shasum.data(using: .utf8))
   }
 }
+
+#endif
