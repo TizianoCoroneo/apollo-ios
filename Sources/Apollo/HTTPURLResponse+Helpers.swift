@@ -5,7 +5,7 @@ import FoundationNetworking
 #endif
 
 #if os(Linux)
-import GlibC
+import Glibc
 #endif
 
 extension HTTPURLResponse {
