@@ -5,21 +5,21 @@ import PackageDescription
 
 let package = Package(
   name: "Apollo",
-  products: [
+  products: checkForLinux([
     .library(
       name: "Apollo",
       targets: ["Apollo"]),
-    .library(
+    notOnLinux(.library(
       name: "ApolloCodegenLib",
-      targets: ["ApolloCodegenLib"]),
+      targets: ["ApolloCodegenLib"])),
     .library(
       name: "ApolloSQLite",
       targets: ["ApolloSQLite"]),
     .library(
       name: "ApolloWebSocket",
       targets: ["ApolloWebSocket"]),
-  ],
-  dependencies: [
+    ]),
+  dependencies: checkForLinux([
     .package(
       url: "https://github.com/stephencelis/SQLite.swift.git",
       .exact("0.12.2")),
@@ -29,13 +29,13 @@ let package = Package(
     linuxOnly(.package(
       url: "https://github.com/apple/swift-crypto",
       .exact("1.0.2")))
-    ].compactMap { $0 },
-  targets: [
+    ]),
+  targets: checkForLinux([
     .target(
       name: "Apollo",
-      dependencies: [
+      dependencies: checkForLinux([
         linuxOnly("Crypto" as Target.Dependency)
-      ].compactMap { $0 }),
+      ])),
     notOnLinux(.target(
       name: "ApolloCodegenLib",
       dependencies: [])),
@@ -73,8 +73,12 @@ let package = Package(
     notOnLinux(.testTarget(
       name: "ApolloWebsocketTests",
       dependencies: ["ApolloWebSocket", "ApolloTestSupport", "StarWarsAPI"])),
-    ].compactMap { $0 }
+    ])
 )
+
+func checkForLinux<T>(_ values: [T?]) -> [T] {
+  values.compactMap { $0 }
+}
 
 func linuxOnly<T>(_ value: T) -> T? {
   #if os(Linux)
