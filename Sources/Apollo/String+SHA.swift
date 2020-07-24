@@ -16,7 +16,7 @@ extension String {
     return hash.compactMap { String(format: "%02x", $0) }.joined()
 
     #else
-    if #available(OSX 10.15, *) {
+    if #available(iOS 13, OSX 10.15, tvOS 13, *) {
         let hash = SHA256.hash(data: data)
         return hash.compactMap { String(format: "%02x", $0) }.joined()
 
