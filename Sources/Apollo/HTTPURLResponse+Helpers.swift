@@ -4,6 +4,10 @@ import CoreFoundation
 import FoundationNetworking
 #endif
 
+#if os(Linux)
+import GlibC
+#endif
+
 extension HTTPURLResponse {
   var isSuccessful: Bool {
     return (200..<300).contains(statusCode)
@@ -16,6 +20,13 @@ extension HTTPURLResponse {
   var textEncoding: String.Encoding? {
     guard let encodingName = textEncodingName else { return nil }
 
+    #if canImport(FoundationNetworking)
     return String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(CFStringConvertIANACharSetNameToEncoding(encodingName as CFString)))
+    #else
+
+    let nsString = encodingName as NSString
+    let cfString = unsafeBitCast(nsString, to: CFString.self)
+    return String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(CFStringConvertIANACharSetNameToEncoding(cfString)))
+    #endif
   }
 }
