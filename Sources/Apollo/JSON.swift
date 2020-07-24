@@ -64,6 +64,8 @@ func equals(_ lhs: Any, _ rhs: Any) -> Bool {
   }
 
     #if os(Linux)
+    guard let lhs = lhs as? NSObject, let rhs = rhs as? NSObject
+        else { return false }
     return lhs.isEqual(rhs)
     #else
     let lhs = lhs as AnyObject, rhs = rhs as AnyObject
