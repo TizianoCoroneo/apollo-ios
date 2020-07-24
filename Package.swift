@@ -78,7 +78,7 @@ let package = Package(
 
 func linuxOnly<T>(_ value: T) -> T? {
   #if os(Linux)
-  return target
+  return value
   #else
   return nil
   #endif
