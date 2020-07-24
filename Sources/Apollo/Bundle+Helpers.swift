@@ -1,4 +1,6 @@
+
 import Foundation
+import CoreFoundation
 #if os(Linux) && canImport(FoundationNetworking)
 import FoundationNetworking
 #endif
@@ -11,11 +13,6 @@ extension Bundle {
   /// - Returns: The object of the desired type, or nil if it is not present or of the incorrect type.
   func bundleValue<T>(forKey key: String) -> T? {
     return object(forInfoDictionaryKey: key) as? T
-  }
-
-  /// The bundle identifier of this bundle, or nil if not present.
-  var bundleIdentifier: String? {
-    return self.bundleValue(forKey: String(kCFBundleIdentifierKey))
   }
 
   /// The build number of this bundle (kCFBundleVersion) as a string, or nil if not present.
