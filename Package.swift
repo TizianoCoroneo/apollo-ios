@@ -15,10 +15,10 @@ let package = Package(
     .library(
       name: "ApolloSQLite",
       targets: ["ApolloSQLite"]),
-    .library(
+    notOnLinux(.library(
       name: "ApolloWebSocket",
-      targets: ["ApolloWebSocket"]),
-    ]),
+      targets: ["ApolloWebSocket"])),
+  ]),
   dependencies: checkForLinux([
     .package(
       url: "https://github.com/stephencelis/SQLite.swift.git",
