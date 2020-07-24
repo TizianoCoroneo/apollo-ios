@@ -1,7 +1,7 @@
 
 import Foundation
 import CoreFoundation
-#if os(Linux) && canImport(FoundationNetworking)
+#if canImport(FoundationNetworking)
 import FoundationNetworking
 #endif
 
