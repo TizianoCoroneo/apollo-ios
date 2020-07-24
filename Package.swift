@@ -4,8 +4,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "Apollo",
-    products: [
+  name: "Apollo",
+  products: [
     .library(
       name: "Apollo",
       targets: ["Apollo"]),
@@ -13,36 +13,41 @@ let package = Package(
       name: "ApolloCodegenLib",
       targets: ["ApolloCodegenLib"]),
     .library(
-        name: "ApolloSQLite",
-        targets: ["ApolloSQLite"]),
+      name: "ApolloSQLite",
+      targets: ["ApolloSQLite"]),
     .library(
-        name: "ApolloWebSocket",
-        targets: ["ApolloWebSocket"]),
-    ],
-    dependencies: [
+      name: "ApolloWebSocket",
+      targets: ["ApolloWebSocket"]),
+  ],
+  dependencies: [
     .package(
       url: "https://github.com/stephencelis/SQLite.swift.git",
       .exact("0.12.2")),
     .package(
       url: "https://github.com/daltoniam/Starscream",
       .exact("3.1.1")),
-    ],
-    targets: [
+    linuxOnly(.package(
+      url: "https://github.com/apple/swift-crypto",
+      .exact("1.0.2")))
+    ].compactMap { $0 },
+  targets: [
     .target(
       name: "Apollo",
-      dependencies: []),
-    .target(
+      dependencies: [
+        linuxOnly("Crypto" as Target.Dependency)
+      ].compactMap { $0 }),
+    notOnLinux(.target(
       name: "ApolloCodegenLib",
-      dependencies: []),
+      dependencies: [])),
     .target(
       name: "ApolloSQLite",
       dependencies: ["Apollo", "SQLite"]),
     .target(
       name: "ApolloSQLiteTestSupport",
       dependencies: ["ApolloSQLite", "ApolloTestSupport"]),
-	.target(
+    notOnLinux(.target(
       name: "ApolloWebSocket",
-      dependencies: ["Apollo","Starscream"]),
+      dependencies: ["Apollo","Starscream"])),
     .target(
       name: "ApolloTestSupport",
       dependencies: ["Apollo"]),
@@ -59,19 +64,30 @@ let package = Package(
     .testTarget(
       name: "ApolloCacheDependentTests",
       dependencies: ["ApolloSQLiteTestSupport", "StarWarsAPI"]),
-    .testTarget(
+    notOnLinux(.testTarget(
       name: "ApolloCodegenTests",
-      dependencies: ["ApolloCodegenLib"]),
+      dependencies: ["ApolloCodegenLib"])),
     .testTarget(
       name: "ApolloSQLiteTests",
       dependencies: ["ApolloSQLiteTestSupport", "StarWarsAPI"]),
-    .testTarget(
+    notOnLinux(.testTarget(
       name: "ApolloWebsocketTests",
-      dependencies: ["ApolloWebSocket", "ApolloTestSupport", "StarWarsAPI"]),
-    ]
+      dependencies: ["ApolloWebSocket", "ApolloTestSupport", "StarWarsAPI"])),
+    ].compactMap { $0 }
 )
 
-#if os(Linux)
-package.targets[0].dependencies.append("Crypto")
-package.dependencies.append(.package(url: "https://github.com/apple/swift-crypto", .exact("1.0.2")))
-#endif
+func linuxOnly<T>(_ value: T) -> T? {
+  #if os(Linux)
+  return target
+  #else
+  return nil
+  #endif
+}
+
+func notOnLinux<T>(_ value: T) -> T? {
+  #if os(Linux)
+  return nil
+  #else
+  return value
+  #endif
+}
