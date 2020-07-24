@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// Wrapper for a value protected by an NSLock
 public class Atomic<T> {

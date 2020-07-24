@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// A helper for building out multi-part form data for upload
 public class MultipartFormData {

@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 final class Mutex {
   private var _lock = pthread_mutex_t()

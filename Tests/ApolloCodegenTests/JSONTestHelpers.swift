@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 // Only available on macOS
 #if os(macOS)

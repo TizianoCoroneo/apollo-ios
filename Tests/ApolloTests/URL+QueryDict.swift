@@ -7,6 +7,9 @@
 //
 
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 extension URL {
   

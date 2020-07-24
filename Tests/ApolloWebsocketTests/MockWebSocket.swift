@@ -1,5 +1,8 @@
 import Starscream
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 @testable import ApolloWebSocket
 
 class MockWebSocket: ApolloWebSocketClient {

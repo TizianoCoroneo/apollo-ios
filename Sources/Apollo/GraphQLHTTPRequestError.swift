@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// An error which has occurred during the serialization of a request.
 public enum GraphQLHTTPRequestError: Error, LocalizedError {

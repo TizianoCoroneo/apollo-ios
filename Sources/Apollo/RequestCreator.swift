@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public protocol RequestCreator {
   /// Creates a `GraphQLMap` out of the passed-in operation

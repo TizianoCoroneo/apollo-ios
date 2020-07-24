@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 import Dispatch
 
 /// A cache policy that specifies whether results should be fetched from the server or loaded from the local cache.

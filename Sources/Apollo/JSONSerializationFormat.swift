@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public final class JSONSerializationFormat {
   public class func serialize(value: JSONEncodable) throws -> Data {

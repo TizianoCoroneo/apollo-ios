@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 import ApolloTestSupport
 import ApolloSQLiteTestSupport
 

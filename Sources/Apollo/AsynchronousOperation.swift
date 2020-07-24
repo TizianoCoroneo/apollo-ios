@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 class AsynchronousOperation: Operation {
   @objc class func keyPathsForValuesAffectingIsExecuting() -> Set<String> {

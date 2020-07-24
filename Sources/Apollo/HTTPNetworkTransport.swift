@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// Empty base protocol to allow multiple sub-protocols to just use a single parameter.
 public protocol HTTPNetworkTransportDelegate: class {}

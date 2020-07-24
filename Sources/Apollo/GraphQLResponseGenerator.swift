@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 final class GraphQLResponseGenerator: GraphQLResultAccumulator {
   func accept(scalar: JSONValue, info: GraphQLResolveInfo) -> JSONValue {

@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public final class InMemoryNormalizedCache: NormalizedCache {
   private var records: RecordSet

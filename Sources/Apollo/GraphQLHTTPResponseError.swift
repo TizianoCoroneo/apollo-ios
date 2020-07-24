@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// A transport-level, HTTP-specific error.
 public struct GraphQLHTTPResponseError: Error, LocalizedError {

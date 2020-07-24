@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 extension String: JSONDecodable, JSONEncodable {
   public init(jsonValue value: JSONValue) throws {

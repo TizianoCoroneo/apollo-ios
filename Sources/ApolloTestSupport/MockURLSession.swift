@@ -6,6 +6,9 @@
 //
 
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public final class MockURLSession: URLSession {
   public private (set) var lastRequest: URLRequest?

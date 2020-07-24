@@ -3,6 +3,9 @@
 
 import Apollo
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public final class RepositoryQuery: GraphQLQuery {
   /// The raw GraphQL definition of this operation.

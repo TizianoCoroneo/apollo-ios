@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public protocol GraphQLInputValue {
   func evaluate(with variables: [String: JSONEncodable]?) throws -> JSONValue

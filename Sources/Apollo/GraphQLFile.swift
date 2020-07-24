@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux) && canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// A file which can be uploaded to a GraphQL server
 public struct GraphQLFile {
