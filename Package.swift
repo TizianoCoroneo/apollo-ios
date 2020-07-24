@@ -70,3 +70,8 @@ let package = Package(
       dependencies: ["ApolloWebSocket", "ApolloTestSupport", "StarWarsAPI"]),
     ]
 )
+
+#if os(Linux)
+package.targets[0].dependencies.append("Crypto")
+package.dependencies.append(.package(url: "https://github.com/apple/swift-crypto", .exact("1.0.2")))
+#endif
