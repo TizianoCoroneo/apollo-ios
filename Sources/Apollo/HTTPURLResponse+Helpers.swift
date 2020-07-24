@@ -21,12 +21,12 @@ extension HTTPURLResponse {
     guard let encodingName = textEncodingName else { return nil }
 
     #if canImport(FoundationNetworking)
-    return String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(CFStringConvertIANACharSetNameToEncoding(encodingName as CFString)))
-    #else
-
     let nsString = encodingName as NSString
     let cfString = unsafeBitCast(nsString, to: CFString.self)
     return String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(CFStringConvertIANACharSetNameToEncoding(cfString)))
+    #else
+
+    return String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(CFStringConvertIANACharSetNameToEncoding(encodingName as CFString)))
     #endif
   }
 }
