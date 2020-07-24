@@ -30,7 +30,7 @@ let package = Package(
     targets: [
     .target(
       name: "Apollo",
-      dependencies: ["SSCommonCrypto"]),
+      dependencies: []),
     .target(
       name: "ApolloCodegenLib",
       dependencies: []),
@@ -72,5 +72,8 @@ let package = Package(
 )
 
 #if os(Linux)
+
+package.targets[0].dependencies.append("SSCommonCrypto")
+
 package.dependencies.append(.package(url: "https://github.com/TizianoCoroneo/common-crypto-spm", .branch("master")))
 #endif
