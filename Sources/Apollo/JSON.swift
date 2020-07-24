@@ -63,6 +63,10 @@ func equals(_ lhs: Any, _ rhs: Any) -> Bool {
     return lhs == rhs
   }
 
-  let lhs = lhs as AnyObject, rhs = rhs as AnyObject
-  return lhs.isEqual(rhs)
+    #if os(Linux)
+    return lhs.isEqual(rhs)
+    #else
+    let lhs = lhs as AnyObject, rhs = rhs as AnyObject
+    return lhs.isEqual(rhs)
+    #endif
 }
