@@ -23,9 +23,9 @@ let package = Package(
     .package(
       url: "https://github.com/stephencelis/SQLite.swift.git",
       .exact("0.12.2")),
-    .package(
+    notOnLinux(.package(
       url: "https://github.com/daltoniam/Starscream",
-      .exact("3.1.1")),
+      .exact("3.1.1"))),
     linuxOnly(.package(
       url: "https://github.com/apple/swift-crypto",
       .exact("1.0.2")))
