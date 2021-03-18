@@ -3536,9 +3536,11 @@ public final class HeroFriendsOfFriendsNamesQuery: GraphQLQuery {
         friends {
           __typename
           id
-          friends {
-            __typename
-            name
+          ... on Character {
+            friends {
+              __typename
+              name
+            }
           }
         }
       }
@@ -3547,7 +3549,7 @@ public final class HeroFriendsOfFriendsNamesQuery: GraphQLQuery {
 
   public let operationName: String = "HeroFriendsOfFriendsNames"
 
-  public let operationIdentifier: String? = "37cd5626048e7243716ffda9e56503939dd189772124a1c21b0e0b87e69aae01"
+  public let operationIdentifier: String? = "746bd0421dd1a079127a3a7d91fcf06e24b3185ef8fe66583efa64ee54ccfae9"
 
   public var episode: Episode?
 
@@ -6735,7 +6737,9 @@ public struct CharacterNameWithInlineFragment: GraphQLFragment {
       ... on Human {
         friends {
           __typename
-          appearsIn
+          ... on Character {
+            appearsIn
+          }
         }
       }
       ... on Droid {

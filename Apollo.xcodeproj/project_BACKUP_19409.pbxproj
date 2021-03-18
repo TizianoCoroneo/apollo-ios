@@ -238,6 +238,7 @@
 		C377CCA922D798BD00572E03 /* GraphQLFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C377CCA822D798BD00572E03 /* GraphQLFile.swift */; };
 		C377CCAB22D7992E00572E03 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C377CCAA22D7992E00572E03 /* MultipartFormData.swift */; };
 		D87AC09F2564D60B0079FAA5 /* ApolloClientOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87AC09E2564D60B0079FAA5 /* ApolloClientOperationTests.swift */; };
+<<<<<<< HEAD
 		DE3C7974260A646300D2F4FF /* dist in Resources */ = {isa = PBXBuildFile; fileRef = DE3C7973260A646300D2F4FF /* dist */; };
 		DE3C7A94260A6C1000D2F4FF /* ApolloCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B68353E2463481A00337AE6 /* ApolloCore.framework */; };
 		DE3C7A95260A6C1000D2F4FF /* ApolloCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B68353E2463481A00337AE6 /* ApolloCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -278,8 +279,8 @@
 		DED45DEF261B96B70086EF63 /* ReadWriteFromStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8622F71EC2004200C38162 /* ReadWriteFromStoreTests.swift */; };
 		DED45E30261B972C0086EF63 /* CachePersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BDAD423FDEC9B00ACD198 /* CachePersistenceTests.swift */; };
 		DED45E6B261B9EAC0086EF63 /* SQLiteTestCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BDAEC23FDED9700ACD198 /* SQLiteTestCacheProvider.swift */; };
-		D90F1AFB2479E57A007A1534 /* WebSocketTransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F1AF92479DEE5007A1534 /* WebSocketTransportTests.swift */; };
-		DEFBFBDC25FC0852006EE3A5 /* ApolloCodegenFrontend.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = DEFBFBDB25FC0852006EE3A5 /* ApolloCodegenFrontend.bundle.js */; };
+		DED45EC3261BA0ED0086EF63 /* WebSocketTransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F1AF92479DEE5007A1534 /* WebSocketTransportTests.swift */; };
+		DED45EC4261BA0ED0086EF63 /* SplitNetworkTransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BDA8A23FDE92900ACD198 /* SplitNetworkTransportTests.swift */; };
 		DED45EC7261BA0ED0086EF63 /* WebSocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BDA8923FDE92900ACD198 /* WebSocketTests.swift */; };
 		DED45EE4261BA1FB0086EF63 /* ApolloSQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7BDABF23FDEBB600ACD198 /* ApolloSQLite.framework */; };
 		DED45EE5261BA1FB0086EF63 /* ApolloWebSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7BDA7D23FDE90400ACD198 /* ApolloWebSocket.framework */; };
@@ -295,6 +296,10 @@
 		DED46035261CEA660086EF63 /* ApolloTestSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A95781EC0FC1200304A2D /* ApolloTestSupport.framework */; };
 		DED46042261CEA8A0086EF63 /* TestServerURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED45C172615308E0086EF63 /* TestServerURLs.swift */; };
 		DED46051261CEAD20086EF63 /* StarWarsAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCE2CFA1E6C213D00E34457 /* StarWarsAPI.framework */; };
+=======
+		D90F1AFB2479E57A007A1534 /* WebSocketTransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F1AF92479DEE5007A1534 /* WebSocketTransportTests.swift */; };
+		DEFBFBDC25FC0852006EE3A5 /* ApolloCodegenFrontend.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = DEFBFBDB25FC0852006EE3A5 /* ApolloCodegenFrontend.bundle.js */; };
+>>>>>>> faa93b95 (Schema changes to test with Friends interface)
 		E86D8E05214B32FD0028EFE1 /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86D8E03214B32DA0028EFE1 /* JSONTests.swift */; };
 		F16D083C21EF6F7300C458B8 /* QueryFromJSONBuildingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16D083B21EF6F7300C458B8 /* QueryFromJSONBuildingTests.swift */; };
 		F82E62E122BCD223000C311B /* AutomaticPersistedQueriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E62E022BCD223000C311B /* AutomaticPersistedQueriesTests.swift */; };
@@ -316,13 +321,6 @@
 			remoteInfo = UploadAPI;
 		};
 		9B683548246348CB00337AE6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9FC7503B1D2A532C00458D91 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9B68353D2463481A00337AE6;
-			remoteInfo = ApolloCore;
-		};
-		9B68354C24634A2000337AE6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9FC7503B1D2A532C00458D91 /* Project object */;
 			proxyType = 1;
@@ -364,7 +362,7 @@
 			remoteGlobalIDString = 9FC750431D2A532C00458D91;
 			remoteInfo = Apollo;
 		};
-		9B7BDB0623FDF04000ACD198 /* PBXContainerItemProxy */ = {
+		9F54C8DE255D76810065AFD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9FC7503B1D2A532C00458D91 /* Project object */;
 			proxyType = 1;
@@ -866,6 +864,7 @@
 		C377CCAA22D7992E00572E03 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
 		D87AC09E2564D60B0079FAA5 /* ApolloClientOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClientOperationTests.swift; sourceTree = "<group>"; };
 		D90F1AF92479DEE5007A1534 /* WebSocketTransportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketTransportTests.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		DE3C7973260A646300D2F4FF /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
 		DE3C79A9260A6ACD00D2F4FF /* AnimalKingdomAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalKingdomAPI.h; sourceTree = "<group>"; };
 		DE3C79AA260A6ACD00D2F4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -924,6 +923,9 @@
 		DED45FB1261CDE7D0086EF63 /* Apollo-PerformanceTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Apollo-PerformanceTestPlan.xctestplan"; sourceTree = "<group>"; };
 		DED45FB2261CDE980086EF63 /* Apollo-CITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Apollo-CITestPlan.xctestplan"; sourceTree = "<group>"; };
 		DED45FB3261CDEC60086EF63 /* Apollo-CodegenTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Apollo-CodegenTestPlan.xctestplan"; sourceTree = "<group>"; };
+=======
+		DEFBFBDB25FC0852006EE3A5 /* ApolloCodegenFrontend.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = ApolloCodegenFrontend.bundle.js; path = dist/ApolloCodegenFrontend.bundle.js; sourceTree = "<group>"; };
+>>>>>>> faa93b95 (Schema changes to test with Friends interface)
 		E86D8E03214B32DA0028EFE1 /* JSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTests.swift; sourceTree = "<group>"; };
 		F16D083B21EF6F7300C458B8 /* QueryFromJSONBuildingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryFromJSONBuildingTests.swift; sourceTree = "<group>"; };
 		F82E62E022BCD223000C311B /* AutomaticPersistedQueriesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomaticPersistedQueriesTests.swift; sourceTree = "<group>"; };
@@ -1622,6 +1624,26 @@
 			path = ApolloPerformanceTests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		9FA6ABBD1EC0A988000017BE /* ApolloCacheDependentTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BB4F5B12581AA50004F0BD6 /* CacheDependentInterceptorTests.swift */,
+				9FA6ABC51EC0A9F7000017BE /* FetchQueryTests.swift */,
+				9FA6ABC81EC0A9F7000017BE /* StarWarsServerCachingRoundtripTests.swift */,
+				9FA6ABC91EC0A9F7000017BE /* StarWarsServerTests.swift */,
+				9FA6ABC61EC0A9F7000017BE /* LoadQueryFromStoreTests.swift */,
+				9F8622F71EC2004200C38162 /* ReadWriteFromStoreTests.swift */,
+				9B60204E23FDFA9F00D0C8E0 /* SQLiteCacheTests.swift */,
+				9FD03C2D25527CE6002227DC /* StoreConcurrencyTests.swift */,
+				9FA6ABCB1EC0A9F7000017BE /* WatchQueryTests.swift */,
+				9FA6ABC01EC0A988000017BE /* Info.plist */,
+			);
+			path = ApolloCacheDependentTests;
+			sourceTree = "<group>";
+		};
+>>>>>>> faa93b95 (Schema changes to test with Friends interface)
 		9FC4B9231D2BE4F00046A641 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -1815,7 +1837,11 @@
 				9F62E03E2590896400E6E808 /* GraphQLError.swift */,
 				9F1A9668258F34BB00A06EEB /* CompilationResult.swift */,
 				9F1A966A258F34BB00A06EEB /* JavaScriptBridge.swift */,
+<<<<<<< HEAD
 				DE3C7973260A646300D2F4FF /* dist */,
+=======
+				DEFBFBDB25FC0852006EE3A5 /* ApolloCodegenFrontend.bundle.js */,
+>>>>>>> faa93b95 (Schema changes to test with Friends interface)
 			);
 			path = Frontend;
 			sourceTree = "<group>";
@@ -2514,7 +2540,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				DE3C7974260A646300D2F4FF /* dist in Resources */,
+=======
+				DEFBFBDC25FC0852006EE3A5 /* ApolloCodegenFrontend.bundle.js in Resources */,
+>>>>>>> faa93b95 (Schema changes to test with Friends interface)
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

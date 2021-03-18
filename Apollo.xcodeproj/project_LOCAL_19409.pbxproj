@@ -278,8 +278,8 @@
 		DED45DEF261B96B70086EF63 /* ReadWriteFromStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8622F71EC2004200C38162 /* ReadWriteFromStoreTests.swift */; };
 		DED45E30261B972C0086EF63 /* CachePersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BDAD423FDEC9B00ACD198 /* CachePersistenceTests.swift */; };
 		DED45E6B261B9EAC0086EF63 /* SQLiteTestCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BDAEC23FDED9700ACD198 /* SQLiteTestCacheProvider.swift */; };
-		D90F1AFB2479E57A007A1534 /* WebSocketTransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F1AF92479DEE5007A1534 /* WebSocketTransportTests.swift */; };
-		DEFBFBDC25FC0852006EE3A5 /* ApolloCodegenFrontend.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = DEFBFBDB25FC0852006EE3A5 /* ApolloCodegenFrontend.bundle.js */; };
+		DED45EC3261BA0ED0086EF63 /* WebSocketTransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F1AF92479DEE5007A1534 /* WebSocketTransportTests.swift */; };
+		DED45EC4261BA0ED0086EF63 /* SplitNetworkTransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BDA8A23FDE92900ACD198 /* SplitNetworkTransportTests.swift */; };
 		DED45EC7261BA0ED0086EF63 /* WebSocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BDA8923FDE92900ACD198 /* WebSocketTests.swift */; };
 		DED45EE4261BA1FB0086EF63 /* ApolloSQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7BDABF23FDEBB600ACD198 /* ApolloSQLite.framework */; };
 		DED45EE5261BA1FB0086EF63 /* ApolloWebSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7BDA7D23FDE90400ACD198 /* ApolloWebSocket.framework */; };
@@ -322,13 +322,6 @@
 			remoteGlobalIDString = 9B68353D2463481A00337AE6;
 			remoteInfo = ApolloCore;
 		};
-		9B68354C24634A2000337AE6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9FC7503B1D2A532C00458D91 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9B68353D2463481A00337AE6;
-			remoteInfo = ApolloCore;
-		};
 		9B7BDAF723FDEE8400ACD198 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9FC7503B1D2A532C00458D91 /* Project object */;
@@ -364,7 +357,7 @@
 			remoteGlobalIDString = 9FC750431D2A532C00458D91;
 			remoteInfo = Apollo;
 		};
-		9B7BDB0623FDF04000ACD198 /* PBXContainerItemProxy */ = {
+		9F54C8DE255D76810065AFD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9FC7503B1D2A532C00458D91 /* Project object */;
 			proxyType = 1;

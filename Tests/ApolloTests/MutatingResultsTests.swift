@@ -13,6 +13,6 @@ class MutatingResultsTests: XCTestCase {
     
     XCTAssertEqual(hero.__typename, "Droid")
     XCTAssertEqual(hero.id, "2001")
-    XCTAssertEqual(hero.name, "Artoo")
+    XCTAssertEqual(hero.fragments.characterName.name, "Artoo")
   }
 }

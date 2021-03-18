@@ -47,8 +47,6 @@ class FragmentConstructionAndConversionTests: XCTestCase {
     let r2d2 = CharacterNameAndDroidPrimaryFunction.makeDroid(name: "R2-D2", primaryFunction: "Protocol")
     
     XCTAssertEqual(r2d2.__typename, "Droid")
-    XCTAssertEqual(r2d2.name, "R2-D2")
-    XCTAssertEqual(r2d2.asDroid?.primaryFunction, "Protocol")
     XCTAssertEqual(r2d2.fragments.characterName.name, "R2-D2")
     XCTAssertEqual(r2d2.fragments.droidPrimaryFunction?.primaryFunction, "Protocol")
   }
@@ -57,8 +55,6 @@ class FragmentConstructionAndConversionTests: XCTestCase {
     let luke = CharacterNameAndDroidPrimaryFunction.makeHuman(name: "Luke Skywalker")
     
     XCTAssertEqual(luke.__typename, "Human")
-    XCTAssertEqual(luke.name, "Luke Skywalker")
-    XCTAssertNil(luke.asDroid)
     XCTAssertEqual(luke.fragments.characterName.name, "Luke Skywalker")
     XCTAssertNil(luke.fragments.droidPrimaryFunction)
   }
@@ -67,8 +63,8 @@ class FragmentConstructionAndConversionTests: XCTestCase {
     let r2d2 = DroidNameAndPrimaryFunction(name: "R2-D2", primaryFunction: "Protocol")
     
     XCTAssertEqual(r2d2.__typename, "Droid")
-    XCTAssertEqual(r2d2.name, "R2-D2")
-    XCTAssertEqual(r2d2.primaryFunction, "Protocol")
+    XCTAssertEqual(r2d2.fragments.characterName.name, "R2-D2")
+    XCTAssertEqual(r2d2.fragments.droidPrimaryFunction.primaryFunction, "Protocol")
   }
   
   func testConstructHeroDetailsFragmentWithDroidSpecificProperty() throws {
