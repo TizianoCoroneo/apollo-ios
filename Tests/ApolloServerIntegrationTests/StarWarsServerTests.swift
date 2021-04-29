@@ -284,13 +284,13 @@ class StarWarsServerTests: XCTestCase, CacheDependentTesting {
   
   func testHeroDetailsFragmentConditionalInclusion() {
     fetch(query: HeroDetailsFragmentConditionalInclusionQuery(includeDetails: true)) { data in
-      XCTAssertEqual(data.hero?.name, "R2-D2")
-      XCTAssertEqual(data.hero?.asDroid?.primaryFunction, "Astromech")
+      XCTAssertEqual(data.hero?.fragments.heroDetails.name, "R2-D2")
+      XCTAssertEqual(data.hero?.fragments.heroDetails.asDroid?.primaryFunction, "Astromech")
     }
     
     fetch(query: HeroDetailsFragmentConditionalInclusionQuery(includeDetails: false)) { data in
-      XCTAssertNil(data.hero?.name)
-      XCTAssertNil(data.hero?.asDroid?.primaryFunction)
+      XCTAssertNil(data.hero?.fragments.heroDetails.name)
+      XCTAssertNil(data.hero?.fragments.heroDetails.asDroid?.primaryFunction)
     }
   }
   
