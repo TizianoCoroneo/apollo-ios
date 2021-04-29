@@ -191,6 +191,39 @@ class FetchQueryTests: XCTestCase, CacheDependentTesting {
     
     wait(for: [serverRequestExpectation, fetchResultFromServerExpectation], timeout: defaultWaitTimeout)
   }
+
+  func testNewUnknownTypeIsSuccesfullyParsedByFragmentOnInterface() throws {
+    let query = HeroNameAndAppearsInWithFragmentQuery()
+
+    let serverRequestExpectation = server.expect(HeroNameAndAppearsInWithFragmentQuery.self) { request in
+      [
+        "data": [
+          "hero": [
+            "name": "Darth Maul",
+            "appearsIn": ["NEWHOPE"],
+            "__typename": "Sith"
+          ]
+        ]
+      ]
+    }
+
+    let resultObserver = makeResultObserver(for: query)
+
+    let fetchResultFromServerExpectation = resultObserver.expectation(description: "Received result from server") { result in
+      try XCTAssertSuccessResult(result) { graphQLResult in
+        XCTAssertEqual(graphQLResult.source, .server)
+        XCTAssertNil(graphQLResult.errors)
+
+        let data = try XCTUnwrap(graphQLResult.data)
+        XCTAssertEqual(data.hero?.fragments.characterNameAndAppearsIn.name, "Darth Maul")
+        XCTAssertEqual(data.hero?.fragments.characterNameAndAppearsIn.appearsIn, [.newhope])
+      }
+    }
+
+    client.fetch(query: query, cachePolicy: .fetchIgnoringCacheData, resultHandler: resultObserver.handler)
+
+    wait(for: [serverRequestExpectation, fetchResultFromServerExpectation], timeout: defaultWaitTimeout)
+  }
   
   func testReturnCacheDataDontFetchWhenDataIsCachedDoesntHitNetwork() throws {
     let query = HeroNameQuery()
