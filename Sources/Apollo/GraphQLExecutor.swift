@@ -193,7 +193,7 @@ final class GraphQLExecutor {
       case let fragmentSpread as GraphQLFragmentSpread:
         let fragment = fragmentSpread.fragment
 
-        if let runtimeType = runtimeType, fragment.possibleTypes.contains(runtimeType) {
+        if let runtimeType = runtimeType {
           try collectFields(selections: fragment.selections,
                             forRuntimeType: runtimeType,
                             into: &groupedFields,
