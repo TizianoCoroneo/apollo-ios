@@ -45,7 +45,7 @@ public final class IssuesAndCommentsForRepositoryQuery: GraphQLQuery {
 
   public let operationName: String = "IssuesAndCommentsForRepository"
 
-  public let operationIdentifier: String? = "ac49a25de6d750d9343c9ddd127a6fc77de480dcb85ad7aedfd1984eb50a4bd6"
+  public let operationIdentifier: String? = "187f0f83986b0269e8d0860e24c1b40ef4243ccbc86c15495076dabfef7a70c1"
 
   public var queryDocument: String {
     var document: String = operationDefinition
@@ -354,6 +354,7 @@ public final class IssuesAndCommentsForRepositoryQuery: GraphQLQuery {
                   GraphQLField("login", type: .nonNull(.scalar(String.self))),
                   GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
                   GraphQLField("login", type: .nonNull(.scalar(String.self))),
+                  GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
                   GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
                   GraphQLField("name", type: .scalar(String.self)),
                 ]
@@ -632,6 +633,7 @@ public final class IssuesAndCommentsForRepositoryQuery: GraphQLQuery {
                       GraphQLField("login", type: .nonNull(.scalar(String.self))),
                       GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
                       GraphQLField("login", type: .nonNull(.scalar(String.self))),
+                      GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
                       GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
                       GraphQLField("name", type: .scalar(String.self)),
                     ]
@@ -723,7 +725,7 @@ public final class IssuesAndCommentsForRepositoryQuery: GraphQLQuery {
 public struct AuthorDetails: GraphQLFragment {
   /// The raw GraphQL definition of this fragment.
   public static let fragmentDefinition: String =
-    "fragment AuthorDetails on Actor { __typename login ... on User { id name } }"
+    "fragment AuthorDetails on Actor { __typename login ... on User { __typename id name } }"
 
   public static let possibleTypes: [String] = ["Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"]
 
@@ -802,6 +804,7 @@ public struct AuthorDetails: GraphQLFragment {
       return [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("login", type: .nonNull(.scalar(String.self))),
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("name", type: .scalar(String.self)),
       ]
