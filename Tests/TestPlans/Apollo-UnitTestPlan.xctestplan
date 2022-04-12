@@ -9,7 +9,10 @@
     }
   ],
   "defaultOptions" : {
-
+    "mallocScribbleEnabled" : true,
+    "mallocStackLoggingOptions" : {
+      "loggingType" : "liveAllocations"
+    }
   },
   "testTargets" : [
     {

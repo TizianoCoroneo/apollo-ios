@@ -66,5 +66,19 @@ public class AsyncResultObserver<Success, Failure> where Failure: Error {
       expectations.removeFirst()
     }
   }
+
+  public func awaitingHandler<S: AsyncSequence>(
+    _ sequence: S
+  ) where S.Element == Success, Failure == Error {
+    Task {
+      do {
+        for try await result in sequence {
+          handler(.success(result))
+        }
+      } catch {
+        handler(.failure(error))
+      }
+    }
+  }
 }
 
