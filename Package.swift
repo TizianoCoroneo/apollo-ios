@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "Apollo",
+  name: "NewApollo",
   platforms: [
     .iOS(.v12),
     .macOS(.v10_14),
