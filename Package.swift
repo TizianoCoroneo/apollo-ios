@@ -13,29 +13,29 @@ let package = Package(
   ],
   products: [
     .library(
-      name: "Apollo",
+      name: "NewApollo",
       targets: ["Apollo"]),
     .library(
-      name: "ApolloAPI",
+      name: "NewApolloAPI",
       targets: ["ApolloAPI"]),
     .library(
-      name: "ApolloUtils",
+      name: "NewApolloUtils",
       targets: ["ApolloUtils"]),
     .library(
-      name: "Apollo-Dynamic",
+      name: "NewApollo-Dynamic",
       type: .dynamic,
       targets: ["Apollo"]),
     .library(
-      name: "ApolloCodegenLib",
+      name: "NewApolloCodegenLib",
       targets: ["ApolloCodegenLib"]),
     .library(
-      name: "ApolloSQLite",
+      name: "NewApolloSQLite",
       targets: ["ApolloSQLite"]),
     .library(
-      name: "ApolloWebSocket",
+      name: "NewApolloWebSocket",
       targets: ["ApolloWebSocket"]),
     .library(
-      name: "ApolloTestSupport",
+      name: "NewApolloTestSupport",
       targets: ["ApolloTestSupport"]),
   ],
   dependencies: [
