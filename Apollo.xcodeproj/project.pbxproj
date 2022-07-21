@@ -14,6 +14,7 @@
 		538DCEFA2805A2340098990E /* GraphQLQueryAsyncWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538DCEF92805A2340098990E /* GraphQLQueryAsyncWatcher.swift */; };
 		538DCEFE2805CB990098990E /* SingleValueCachePolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538DCEFC2805CB230098990E /* SingleValueCachePolicyTests.swift */; };
 		538DCF012805D3410098990E /* AsyncWatchQueryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538DCEFF2805D2280098990E /* AsyncWatchQueryTests.swift */; };
+		538DCF052806B2CE0098990E /* AsyncFetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538DCF042806B2CE0098990E /* AsyncFetchTests.swift */; };
 		54DDB0921EA045870009DD99 /* InMemoryNormalizedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDB0911EA045870009DD99 /* InMemoryNormalizedCache.swift */; };
 		5AC6CA4322AAF7B200B7C94D /* GraphQLHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6CA4222AAF7B200B7C94D /* GraphQLHTTPMethod.swift */; };
 		5BB2C0232380836100774170 /* VersionNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB2C0222380836100774170 /* VersionNumberTests.swift */; };
@@ -534,6 +535,7 @@
 		538DCEF92805A2340098990E /* GraphQLQueryAsyncWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLQueryAsyncWatcher.swift; sourceTree = "<group>"; };
 		538DCEFC2805CB230098990E /* SingleValueCachePolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleValueCachePolicyTests.swift; sourceTree = "<group>"; };
 		538DCEFF2805D2280098990E /* AsyncWatchQueryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncWatchQueryTests.swift; sourceTree = "<group>"; };
+		538DCF042806B2CE0098990E /* AsyncFetchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncFetchTests.swift; sourceTree = "<group>"; };
 		54DDB0911EA045870009DD99 /* InMemoryNormalizedCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryNormalizedCache.swift; sourceTree = "<group>"; };
 		5AC6CA4222AAF7B200B7C94D /* GraphQLHTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLHTTPMethod.swift; sourceTree = "<group>"; };
 		5BB2C0222380836100774170 /* VersionNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionNumberTests.swift; sourceTree = "<group>"; };
@@ -1029,6 +1031,7 @@
 			children = (
 				538DCEFC2805CB230098990E /* SingleValueCachePolicyTests.swift */,
 				538DCEFF2805D2280098990E /* AsyncWatchQueryTests.swift */,
+				538DCF042806B2CE0098990E /* AsyncFetchTests.swift */,
 			);
 			path = AsyncAwait;
 			sourceTree = "<group>";
@@ -2850,6 +2853,7 @@
 				C338DF1722DD9DE9006AF33E /* RequestBodyCreatorTests.swift in Sources */,
 				F16D083C21EF6F7300C458B8 /* QueryFromJSONBuildingTests.swift in Sources */,
 				9BF6C97025194ED7000D5B93 /* MultipartFormDataTests.swift in Sources */,
+				538DCF052806B2CE0098990E /* AsyncFetchTests.swift in Sources */,
 				9FF90A711DDDEB420034C3B6 /* ReadFieldValueTests.swift in Sources */,
 				E63C67A327C8AA2A00B1654E /* OperationMessageMatchers.swift in Sources */,
 				9F295E311E27534800A24949 /* NormalizeQueryResults.swift in Sources */,

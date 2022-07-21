@@ -67,6 +67,20 @@ public class AsyncResultObserver<Success, Failure> where Failure: Error {
     }
   }
 
+  public func awaitingHandler(
+    _ operation: @autoclosure () async throws -> Success
+  ) async throws -> Success
+  where Failure == Error {
+    do {
+      let result = try await operation()
+      handler(.success(result))
+      return result
+    } catch {
+      handler(.failure(error))
+      throw error
+    }
+  }
+
   public func awaitingHandler<S: AsyncSequence>(
     _ sequence: S
   ) where S.Element == Success, Failure == Error {
