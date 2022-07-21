@@ -1,7 +1,7 @@
 import XCTest
 import Nimble
-@testable import ApolloCodegenLib
-import ApolloCodegenInternalTestHelpers
+@testable import NewApolloCodegenLib
+import NewApolloCodegenInternalTestHelpers
 
 class GlobTests: XCTestCase {
   let baseURL = CodegenTestHelper.outputFolderURL().appendingPathComponent("Glob")

@@ -1,5 +1,5 @@
 import Foundation
-@testable import ApolloCodegenLib
+@testable import NewApolloCodegenLib
 import XCTest
 
 extension IR.MergedSelections.MergedSource {

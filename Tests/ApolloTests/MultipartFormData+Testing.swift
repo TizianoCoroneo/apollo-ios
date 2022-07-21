@@ -1,5 +1,5 @@
 import Foundation
-@testable import Apollo
+@testable import NewApollo
 
 extension MultipartFormData {
   

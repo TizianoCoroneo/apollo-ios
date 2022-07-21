@@ -1,5 +1,5 @@
 import Foundation
-@testable import ApolloCodegenLib
+@testable import NewApolloCodegenLib
 
 public struct MockFileGenerator: FileGenerator {
   public var template: TemplateRenderer

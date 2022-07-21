@@ -6,9 +6,9 @@
 //  Copyright © 2019 Apollo GraphQL. All rights reserved.
 //
 
-import Apollo
-@testable import ApolloAPI
-import ApolloInternalTestHelpers
+import NewApollo
+@testable import NewApolloAPI
+import NewApolloInternalTestHelpers
 import Nimble
 import XCTest
 

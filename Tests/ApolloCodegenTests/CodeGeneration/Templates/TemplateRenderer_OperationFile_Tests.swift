@@ -1,7 +1,7 @@
 import XCTest
-@testable import ApolloCodegenLib
-@testable import ApolloCodegenInternalTestHelpers
-import ApolloUtils
+@testable import NewApolloCodegenLib
+@testable import NewApolloCodegenInternalTestHelpers
+import NewApolloUtils
 import Nimble
 
 class TemplateRenderer_OperationFile_Tests: XCTestCase {
@@ -64,24 +64,24 @@ class TemplateRenderer_OperationFile_Tests: XCTestCase {
   func test__renderTargetOperationFile__givenAllSchemaTypesOperationsCombinations_conditionallyIncludeImportStatements() {
     // given
     let expectedAPI = """
-    import ApolloAPI
-    @_exported import enum ApolloAPI.GraphQLEnum
-    @_exported import enum ApolloAPI.GraphQLNullable
+    import NewApolloAPI
+    @_exported import enum NewApolloAPI.GraphQLEnum
+    @_exported import enum NewApolloAPI.GraphQLNullable
 
     """
 
     let expectedAPIAndSchema = """
-    import ApolloAPI
-    @_exported import enum ApolloAPI.GraphQLEnum
-    @_exported import enum ApolloAPI.GraphQLNullable
+    import NewApolloAPI
+    @_exported import enum NewApolloAPI.GraphQLEnum
+    @_exported import enum NewApolloAPI.GraphQLNullable
     import TestSchema
 
     """
 
     let expectedAPIAndTarget = """
-    import ApolloAPI
-    @_exported import enum ApolloAPI.GraphQLEnum
-    @_exported import enum ApolloAPI.GraphQLNullable
+    import NewApolloAPI
+    @_exported import enum NewApolloAPI.GraphQLEnum
+    @_exported import enum NewApolloAPI.GraphQLNullable
     import MockApplication
 
     """

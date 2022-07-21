@@ -1,7 +1,7 @@
 import XCTest
-import Apollo
-import ApolloAPI
-import ApolloInternalTestHelpers
+import NewApollo
+import NewApolloAPI
+import NewApolloInternalTestHelpers
 
 class CacheDependentInterceptorTests: XCTestCase, CacheDependentTesting {
   var cacheType: TestCacheProvider.Type {

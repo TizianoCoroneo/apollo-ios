@@ -1,7 +1,7 @@
 import XCTest
 import Nimble
-@testable import ApolloCodegenLib
-import ApolloUtils
+@testable import NewApolloCodegenLib
+import NewApolloUtils
 
 class MockObjectFileGeneratorTests: XCTestCase {
   let graphqlObject = GraphQLObjectType.mock("MockObject", fields: [:], interfaces: [])

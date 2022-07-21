@@ -3,7 +3,7 @@ title: API Reference
 ---
 
 * [Apollo.framework](./api/Apollo/README/)
-* [ApolloAPI.framework](./api/ApolloAPI/README/)
+* [NewApolloAPI.framework](./api/ApolloAPI/README/)
 * [ApolloUtils.framework](./api/ApolloUtils/README/)
 * [ApolloCodegenLib.framework](./api/ApolloCodegenLib/README/)
 * [ApolloSQLite.framework](./api/ApolloSQLite/README/)

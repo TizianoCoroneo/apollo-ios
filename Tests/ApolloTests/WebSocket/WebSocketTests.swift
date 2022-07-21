@@ -1,9 +1,9 @@
 import XCTest
 import Nimble
-import Apollo
-import ApolloAPI
-import ApolloInternalTestHelpers
-@testable import ApolloWebSocket
+import NewApollo
+import NewApolloAPI
+import NewApolloInternalTestHelpers
+@testable import NewApolloWebSocket
 
 extension WebSocketTransport {
   func write(message: JSONEncodableDictionary) {

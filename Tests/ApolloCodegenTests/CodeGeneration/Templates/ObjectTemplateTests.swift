@@ -1,8 +1,8 @@
 import XCTest
 import Nimble
-@testable import ApolloCodegenLib
-import ApolloCodegenInternalTestHelpers
-import ApolloUtils
+@testable import NewApolloCodegenLib
+import NewApolloCodegenInternalTestHelpers
+import NewApolloUtils
 
 class ObjectTemplateTests: XCTestCase {
 

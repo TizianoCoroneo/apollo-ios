@@ -1,8 +1,8 @@
 import XCTest
 import Nimble
-@testable import Apollo
-import ApolloAPI
-import ApolloInternalTestHelpers
+@testable import NewApollo
+import NewApolloAPI
+import NewApolloInternalTestHelpers
 
 class GETTransformerTests: XCTestCase {
   private var requestBodyCreator: ApolloRequestBodyCreator!

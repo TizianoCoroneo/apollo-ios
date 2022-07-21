@@ -1,5 +1,5 @@
 import XCTest
-@testable import ApolloWebSocket
+@testable import NewApolloWebSocket
 import UploadAPI
 
 class OperationMessageIdCreatorTests: XCTestCase {

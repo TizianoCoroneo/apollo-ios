@@ -1,6 +1,6 @@
 import Foundation
-@testable import Apollo
-@testable import ApolloAPI
+@testable import NewApollo
+@testable import NewApolloAPI
 
 public final class MockNetworkTransport: RequestChainNetworkTransport {
   public init(

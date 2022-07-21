@@ -1,14 +1,14 @@
 // @generated
 //  This file was automatically generated and should not be edited.
 
-import Apollo
-import ApolloAPI
+import NewApollo
+import NewApolloAPI
 import Foundation
 
-public protocol SelectionSet: ApolloAPI.SelectionSet & RootSelectionSet
+public protocol SelectionSet: NewApolloAPI.SelectionSet & RootSelectionSet
 where Schema == StarWarsAPISchema {}
 
-public protocol TypeCase: ApolloAPI.TypeCase
+public protocol TypeCase: NewApolloAPI.TypeCase
 where Schema == StarWarsAPISchema {}
 
 public enum StarWarsAPISchema: SchemaConfiguration {

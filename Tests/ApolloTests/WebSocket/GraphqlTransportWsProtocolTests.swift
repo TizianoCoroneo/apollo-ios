@@ -1,8 +1,8 @@
 import XCTest
-@testable import ApolloWebSocket
-import ApolloInternalTestHelpers
+@testable import NewApolloWebSocket
+import NewApolloInternalTestHelpers
 import Nimble
-import Apollo
+import NewApollo
 // import SubscriptionAPI
 #warning("When SubscriptionAPI target is regenerated and compiles then decide what to do here")
 

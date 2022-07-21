@@ -1,5 +1,5 @@
 import Foundation
-import ApolloInternalTestHelpers
+import NewApolloInternalTestHelpers
 
 // These test cases inherit all tests from their superclasses.
 

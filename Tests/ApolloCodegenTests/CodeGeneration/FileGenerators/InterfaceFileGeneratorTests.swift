@@ -1,7 +1,7 @@
 import XCTest
 import Nimble
-@testable import ApolloCodegenLib
-import ApolloUtils
+@testable import NewApolloCodegenLib
+import NewApolloUtils
 
 class InterfaceFileGeneratorTests: XCTestCase {
   let graphqlInterface = GraphQLInterfaceType.mock("MockInterface", fields: [:], interfaces: [])

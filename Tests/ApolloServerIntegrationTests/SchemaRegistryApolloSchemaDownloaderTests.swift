@@ -1,8 +1,8 @@
 #if os(macOS)
 import XCTest
-import ApolloInternalTestHelpers
-import ApolloCodegenInternalTestHelpers
-@testable import ApolloCodegenLib
+import NewApolloInternalTestHelpers
+import NewApolloCodegenInternalTestHelpers
+@testable import NewApolloCodegenLib
 
 class SchemaRegistryApolloSchemaDownloaderTests: XCTestCase {
   func testDownloadingSchema_fromSchemaRegistry_shouldOutputSDL() throws {

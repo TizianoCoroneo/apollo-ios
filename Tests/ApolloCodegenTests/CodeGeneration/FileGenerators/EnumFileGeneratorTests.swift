@@ -1,7 +1,7 @@
 import XCTest
 import Nimble
-@testable import ApolloCodegenLib
-import ApolloUtils
+@testable import NewApolloCodegenLib
+import NewApolloUtils
 
 class EnumFileGeneratorTests: XCTestCase {
   let graphqlEnum = GraphQLEnumType.mock(name: "MockEnum")

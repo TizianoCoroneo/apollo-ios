@@ -1,7 +1,7 @@
 // @generated
 // This file was automatically generated and should not be edited.
 
-import ApolloAPI
+import NewApolloAPI
 
 public struct MeasurementsInput: InputObject {
   public private(set) var __data: InputDict

@@ -1,7 +1,7 @@
 import XCTest
-import ApolloInternalTestHelpers
-import ApolloCodegenInternalTestHelpers
-@testable import ApolloCodegenLib
+import NewApolloInternalTestHelpers
+import NewApolloCodegenInternalTestHelpers
+@testable import NewApolloCodegenLib
 
 class DocumentParsingAndValidationTests: XCTestCase {
   

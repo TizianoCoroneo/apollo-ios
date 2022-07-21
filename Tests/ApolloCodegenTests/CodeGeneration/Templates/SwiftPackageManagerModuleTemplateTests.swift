@@ -1,5 +1,5 @@
 import XCTest
-@testable import ApolloCodegenLib
+@testable import NewApolloCodegenLib
 import Nimble
 
 class SwiftPackageManagerModuleTemplateTests: XCTestCase {

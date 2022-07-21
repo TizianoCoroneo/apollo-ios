@@ -8,9 +8,9 @@
 
 import XCTest
 import Nimble
-import ApolloInternalTestHelpers
-@testable import Apollo
-@testable import ApolloAPI
+import NewApolloInternalTestHelpers
+@testable import NewApollo
+@testable import NewApolloAPI
 
 class RequestBodyCreatorTests: XCTestCase {
 

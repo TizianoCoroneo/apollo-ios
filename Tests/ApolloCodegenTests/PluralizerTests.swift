@@ -1,6 +1,6 @@
 import Foundation
 import XCTest
-@testable import ApolloCodegenLib
+@testable import NewApolloCodegenLib
 
 class PluralizerTests: XCTestCase {
   

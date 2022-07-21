@@ -1,8 +1,8 @@
 import XCTest
 import Nimble
-@testable import ApolloCodegenLib
-import ApolloUtils
-import ApolloCodegenInternalTestHelpers
+@testable import NewApolloCodegenLib
+import NewApolloUtils
+import NewApolloCodegenInternalTestHelpers
 
 class OperationIdentifiersTemplateTests: XCTestCase {
   var subject: OperationIdentifiersTemplate!

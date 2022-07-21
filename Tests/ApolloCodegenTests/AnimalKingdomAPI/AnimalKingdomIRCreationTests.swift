@@ -2,8 +2,8 @@ import Foundation
 import XCTest
 import Nimble
 import OrderedCollections
-@testable import ApolloCodegenLib
-import ApolloCodegenInternalTestHelpers
+@testable import NewApolloCodegenLib
+import NewApolloCodegenInternalTestHelpers
 
 final class AnimalKingdomIRCreationTests: XCTestCase {
 

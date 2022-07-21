@@ -1,7 +1,7 @@
 import XCTest
-@testable import ApolloCodegenLib
-@testable import ApolloCodegenInternalTestHelpers
-import ApolloUtils
+@testable import NewApolloCodegenLib
+@testable import NewApolloCodegenInternalTestHelpers
+import NewApolloUtils
 import Nimble
 
 class TemplateRenderer_SchemaFile_Tests: XCTestCase {
@@ -64,7 +64,7 @@ class TemplateRenderer_SchemaFile_Tests: XCTestCase {
   func test__renderTargetSchemaFile__givenAllSchemaTypesOperationsCombinations_shouldIncludeImportStatement() {
     // given
     let expected = """
-    import ApolloAPI
+    import NewApolloAPI
 
     """
 

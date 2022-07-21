@@ -1,6 +1,6 @@
 import Foundation
-import Apollo
-import ApolloAPI
+import NewApollo
+import NewApolloAPI
 
 // An interceptor which blindly retries every time it receives a request. 
 class BlindRetryingTestInterceptor: ApolloInterceptor {

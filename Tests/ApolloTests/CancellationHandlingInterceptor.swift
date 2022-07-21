@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import Apollo
-import ApolloAPI
+import NewApollo
+import NewApolloAPI
 
 class CancellationHandlingInterceptor: ApolloInterceptor, Cancellable {
   private(set) var hasBeenCancelled = false

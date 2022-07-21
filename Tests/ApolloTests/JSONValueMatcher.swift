@@ -1,6 +1,6 @@
 import Nimble
-import Apollo
-import ApolloAPI
+import NewApollo
+import NewApolloAPI
 
 public func equalJSONValue(_ expectedValue: JSONEncodable?) -> Predicate<JSONEncodable> {
   return Predicate { actual in

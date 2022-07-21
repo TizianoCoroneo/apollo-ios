@@ -1,7 +1,7 @@
 import XCTest
 
-@testable import Apollo
-import ApolloInternalTestHelpers
+@testable import NewApollo
+import NewApolloInternalTestHelpers
 
 class GraphQLFileTests: XCTestCase {
   

@@ -1,8 +1,8 @@
 import XCTest
 import Nimble
-@testable import ApolloCodegenLib
-import ApolloCodegenInternalTestHelpers
-import ApolloUtils
+@testable import NewApolloCodegenLib
+import NewApolloCodegenInternalTestHelpers
+import NewApolloUtils
 
 class SchemaTemplateTests: XCTestCase {
   var subject: SchemaTemplate!
@@ -104,16 +104,16 @@ class SchemaTemplateTests: XCTestCase {
     """
 
     let expectedDetached = """
-    public protocol AName_SelectionSet: ApolloAPI.SelectionSet & ApolloAPI.RootSelectionSet
+    public protocol AName_SelectionSet: NewApolloAPI.SelectionSet & NewApolloAPI.RootSelectionSet
     where Schema == AName.Schema {}
 
-    public protocol AName_InlineFragment: ApolloAPI.SelectionSet & ApolloAPI.InlineFragment
+    public protocol AName_InlineFragment: NewApolloAPI.SelectionSet & NewApolloAPI.InlineFragment
     where Schema == AName.Schema {}
 
-    public protocol AName_MutableSelectionSet: ApolloAPI.MutableRootSelectionSet
+    public protocol AName_MutableSelectionSet: NewApolloAPI.MutableRootSelectionSet
     where Schema == AName.Schema {}
 
-    public protocol AName_MutableInlineFragment: ApolloAPI.MutableSelectionSet & ApolloAPI.InlineFragment
+    public protocol AName_MutableInlineFragment: NewApolloAPI.MutableSelectionSet & NewApolloAPI.InlineFragment
     where Schema == AName.Schema {}
     """
 
@@ -136,16 +136,16 @@ class SchemaTemplateTests: XCTestCase {
     )
 
     let expectedTemplate = """
-    public protocol SelectionSet: ApolloAPI.SelectionSet & ApolloAPI.RootSelectionSet
+    public protocol SelectionSet: NewApolloAPI.SelectionSet & NewApolloAPI.RootSelectionSet
     where Schema == AName.Schema {}
 
-    public protocol InlineFragment: ApolloAPI.SelectionSet & ApolloAPI.InlineFragment
+    public protocol InlineFragment: NewApolloAPI.SelectionSet & NewApolloAPI.InlineFragment
     where Schema == AName.Schema {}
 
-    public protocol MutableSelectionSet: ApolloAPI.MutableRootSelectionSet
+    public protocol MutableSelectionSet: NewApolloAPI.MutableRootSelectionSet
     where Schema == AName.Schema {}
 
-    public protocol MutableInlineFragment: ApolloAPI.MutableSelectionSet & ApolloAPI.InlineFragment
+    public protocol MutableInlineFragment: NewApolloAPI.MutableSelectionSet & NewApolloAPI.InlineFragment
     where Schema == AName.Schema {}
     """
 
@@ -168,16 +168,16 @@ class SchemaTemplateTests: XCTestCase {
     )
 
     let expectedTemplate = """
-    public protocol SelectionSet: ApolloAPI.SelectionSet & ApolloAPI.RootSelectionSet
+    public protocol SelectionSet: NewApolloAPI.SelectionSet & NewApolloAPI.RootSelectionSet
     where Schema == AName.Schema {}
 
-    public protocol InlineFragment: ApolloAPI.SelectionSet & ApolloAPI.InlineFragment
+    public protocol InlineFragment: NewApolloAPI.SelectionSet & NewApolloAPI.InlineFragment
     where Schema == AName.Schema {}
 
-    public protocol MutableSelectionSet: ApolloAPI.MutableRootSelectionSet
+    public protocol MutableSelectionSet: NewApolloAPI.MutableRootSelectionSet
     where Schema == AName.Schema {}
 
-    public protocol MutableInlineFragment: ApolloAPI.MutableSelectionSet & ApolloAPI.InlineFragment
+    public protocol MutableInlineFragment: NewApolloAPI.MutableSelectionSet & NewApolloAPI.InlineFragment
     where Schema == AName.Schema {}
     """
 

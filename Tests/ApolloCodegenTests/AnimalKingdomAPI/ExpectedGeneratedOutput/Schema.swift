@@ -1,11 +1,11 @@
-import ApolloAPI
+import NewApolloAPI
 
 public typealias ID = String
 
-public protocol SelectionSet: ApolloAPI.SelectionSet & RootSelectionSet
+public protocol SelectionSet: NewApolloAPI.SelectionSet & RootSelectionSet
 where Schema == AnimalKingdomAPI.Schema {}
 
-public protocol TypeCase: ApolloAPI.SelectionSet & TypeCase
+public protocol TypeCase: NewApolloAPI.SelectionSet & TypeCase
 where Schema == AnimalKingdomAPI.Schema {}
 
 public enum Schema: SchemaConfiguration {

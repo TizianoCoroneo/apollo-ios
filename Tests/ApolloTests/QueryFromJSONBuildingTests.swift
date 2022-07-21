@@ -1,6 +1,6 @@
 import XCTest
-@testable import Apollo
-import ApolloInternalTestHelpers
+@testable import NewApollo
+import NewApolloInternalTestHelpers
 
 #warning("TODO: Rewrite tests with Animal Schema")
 class QueryFromJSONBuildingTests: XCTestCase {

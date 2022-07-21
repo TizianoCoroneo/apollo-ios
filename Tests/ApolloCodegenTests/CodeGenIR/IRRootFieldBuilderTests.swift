@@ -1,11 +1,11 @@
 import XCTest
 import Nimble
 import OrderedCollections
-@testable import ApolloCodegenLib
-import ApolloInternalTestHelpers
-import ApolloCodegenInternalTestHelpers
-import ApolloAPI
-import ApolloUtils
+@testable import NewApolloCodegenLib
+import NewApolloInternalTestHelpers
+import NewApolloCodegenInternalTestHelpers
+import NewApolloAPI
+import NewApolloUtils
 
 class IRRootFieldBuilderTests: XCTestCase {
 

@@ -1,8 +1,8 @@
 import Foundation
 import Nimble
-import Apollo
-@testable import ApolloWebSocket
-import ApolloAPI
+import NewApollo
+@testable import NewApolloWebSocket
+import NewApolloAPI
 
 public func equalMessage(payload: JSONEncodableDictionary? = nil, id: String? = nil, type: OperationMessage.Types) -> Predicate<String> {
   return Predicate.define { actualExpression in

@@ -1,6 +1,6 @@
 import XCTest
-@testable import Apollo
-import ApolloInternalTestHelpers
+@testable import NewApollo
+import NewApolloInternalTestHelpers
 import StarWarsAPI
 
 #warning("TODO fix this after setting up mutable cache mocks.")

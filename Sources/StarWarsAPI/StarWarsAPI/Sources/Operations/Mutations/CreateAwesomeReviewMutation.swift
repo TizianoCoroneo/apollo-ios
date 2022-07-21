@@ -1,7 +1,7 @@
 // @generated
 // This file was automatically generated and should not be edited.
 
-import ApolloAPI
+import NewApolloAPI
 @_exported import enum ApolloAPI.GraphQLEnum
 @_exported import enum ApolloAPI.GraphQLNullable
 

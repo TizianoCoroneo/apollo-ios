@@ -1,10 +1,10 @@
 import XCTest
-@testable import Apollo
-import ApolloAPI
+@testable import NewApollo
+import NewApolloAPI
 #if canImport(ApolloSQLite)
-import ApolloSQLite
+import NewApolloSQLite
 #endif
-import ApolloInternalTestHelpers
+import NewApolloInternalTestHelpers
 
 class LoadQueryFromStoreTests: XCTestCase, CacheDependentTesting, StoreLoading {
   var cacheType: TestCacheProvider.Type {

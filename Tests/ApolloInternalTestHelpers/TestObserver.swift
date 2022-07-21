@@ -1,4 +1,4 @@
-import ApolloUtils
+import NewApolloUtils
 import XCTest
 
 public class TestObserver: NSObject, XCTestObservation {

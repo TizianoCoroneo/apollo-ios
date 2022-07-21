@@ -1,5 +1,5 @@
-@testable import ApolloCodegenLib
-import ApolloUtils
+@testable import NewApolloCodegenLib
+import NewApolloUtils
 import OrderedCollections
 
 extension IR {

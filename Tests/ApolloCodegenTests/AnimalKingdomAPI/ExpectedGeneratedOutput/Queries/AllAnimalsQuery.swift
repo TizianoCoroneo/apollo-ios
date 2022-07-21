@@ -1,4 +1,4 @@
-import ApolloAPI
+import NewApolloAPI
 import AnimalKingdomAPI
 
 public class AllAnimalsQuery: GraphQLQuery {

@@ -14,29 +14,29 @@ let package = Package(
   products: [
     .library(
       name: "NewApollo",
-      targets: ["Apollo"]),
+      targets: ["NewApollo"]),
     .library(
       name: "NewApolloAPI",
-      targets: ["ApolloAPI"]),
+      targets: ["NewApolloAPI"]),
     .library(
       name: "NewApolloUtils",
-      targets: ["ApolloUtils"]),
+      targets: ["NewApolloUtils"]),
     .library(
       name: "NewApollo-Dynamic",
       type: .dynamic,
-      targets: ["Apollo"]),
+      targets: ["NewApollo"]),
     .library(
       name: "NewApolloCodegenLib",
-      targets: ["ApolloCodegenLib"]),
+      targets: ["NewApolloCodegenLib"]),
     .library(
       name: "NewApolloSQLite",
-      targets: ["ApolloSQLite"]),
+      targets: ["NewApolloSQLite"]),
     .library(
       name: "NewApolloWebSocket",
-      targets: ["ApolloWebSocket"]),
+      targets: ["NewApolloWebSocket"]),
     .library(
       name: "NewApolloTestSupport",
-      targets: ["ApolloTestSupport"]),
+      targets: ["NewApolloTestSupport"]),
   ],
   dependencies: [
     .package(
@@ -51,30 +51,30 @@ let package = Package(
   ],
   targets: [
     .target(
-      name: "Apollo",
+      name: "NewApollo",
       dependencies: [
-        "ApolloAPI",
-        "ApolloUtils"
+        "NewApolloAPI",
+        "NewApolloUtils"
       ],
       exclude: [
         "Info.plist"
       ]),
     .target(
-      name: "ApolloAPI",
+      name: "NewApolloAPI",
       dependencies: [],
       exclude: [
         "Info.plist"
       ]),
     .target(
-      name: "ApolloUtils",
+      name: "NewApolloUtils",
       dependencies: [],
       exclude: [
         "Info.plist"
       ]),
     .target(
-      name: "ApolloCodegenLib",
+      name: "NewApolloCodegenLib",
       dependencies: [
-        "ApolloUtils",
+        "NewApolloUtils",
         .product(name: "InflectorKit", package: "InflectorKit"),
         .product(name: "OrderedCollections", package: "swift-collections")
       ],
@@ -86,26 +86,26 @@ let package = Package(
         .copy("Frontend/dist/ApolloCodegenFrontend.bundle.js"),
       ]),
     .target(
-      name: "ApolloSQLite",
+      name: "NewApolloSQLite",
       dependencies: [
-        "Apollo",
+        "NewApollo",
         .product(name: "SQLite", package: "SQLite.swift"),
       ],
       exclude: [
         "Info.plist"
       ]),
     .target(
-      name: "ApolloWebSocket",
+      name: "NewApolloWebSocket",
       dependencies: [
-        "Apollo",
-        "ApolloUtils"
+        "NewApollo",
+        "NewApolloUtils"
       ],
       exclude: [
         "Info.plist"
       ]),
     .target(
-      name: "ApolloTestSupport",
-      dependencies: ["ApolloAPI"],
+      name: "NewApolloTestSupport",
+      dependencies: ["NewApolloAPI"],
       exclude: [
         "Info.plist"
       ]),

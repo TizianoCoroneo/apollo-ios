@@ -1,8 +1,8 @@
 import XCTest
 import Nimble
-@testable import ApolloCodegenLib
-import ApolloUtils
-import Apollo
+@testable import NewApolloCodegenLib
+import NewApolloUtils
+import NewApollo
 
 class InputObjectTemplateTests: XCTestCase {
   var subject: InputObjectTemplate!

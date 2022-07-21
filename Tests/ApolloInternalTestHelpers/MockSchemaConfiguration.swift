@@ -1,5 +1,5 @@
-@testable import Apollo
-@testable import ApolloAPI
+@testable import NewApollo
+@testable import NewApolloAPI
 
 public class MockSchemaConfiguration: SchemaConfiguration, SchemaUnknownTypeCacheKeyProvider {
 

@@ -1,4 +1,4 @@
-import ApolloAPI
+import NewApolloAPI
 import AnimalKingdomAPI
 
 /// A response data object for a `HeightInMeters` fragment

@@ -1,9 +1,9 @@
 import XCTest
 import Nimble
-@testable import Apollo
-import ApolloUtils
-import ApolloAPI
-import ApolloInternalTestHelpers
+@testable import NewApollo
+import NewApolloUtils
+import NewApolloAPI
+import NewApolloInternalTestHelpers
 
 class ReadWriteFromStoreTests: XCTestCase, CacheDependentTesting, StoreLoading {
 

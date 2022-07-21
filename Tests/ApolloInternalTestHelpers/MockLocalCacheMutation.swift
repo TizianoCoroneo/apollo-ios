@@ -1,5 +1,5 @@
 import Foundation
-import ApolloAPI
+import NewApolloAPI
 
 open class MockLocalCacheMutation<SelectionSet: MutableRootSelectionSet>: LocalCacheMutation {
   open class var operationType: GraphQLOperationType { .query }

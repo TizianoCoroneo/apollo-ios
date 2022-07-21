@@ -1,8 +1,8 @@
 import XCTest
-@testable import ApolloCodegenLib
-import ApolloCodegenInternalTestHelpers
+@testable import NewApolloCodegenLib
+import NewApolloCodegenInternalTestHelpers
 import Nimble
-import ApolloUtils
+import NewApolloUtils
 
 class SchemaModuleFileGeneratorTests: XCTestCase {
   let rootURL = URL(fileURLWithPath: CodegenTestHelper.outputFolderURL().path)

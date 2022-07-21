@@ -1,9 +1,9 @@
 import XCTest
 import Nimble
 import OrderedCollections
-@testable import ApolloCodegenLib
-import ApolloCodegenInternalTestHelpers
-import ApolloUtils
+@testable import NewApolloCodegenLib
+import NewApolloCodegenInternalTestHelpers
+import NewApolloUtils
 
 class OperationDefinitionTemplateTests: XCTestCase {
 

@@ -1,7 +1,7 @@
 // @generated
 // This file was automatically generated and should not be edited.
 
-import ApolloAPI
+import NewApolloAPI
 
 /// The mutation type, represents all updates we can make to our data
 public final class Mutation: Object {

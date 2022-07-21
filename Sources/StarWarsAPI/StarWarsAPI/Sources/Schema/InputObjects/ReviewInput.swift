@@ -1,7 +1,7 @@
 // @generated
 // This file was automatically generated and should not be edited.
 
-import ApolloAPI
+import NewApolloAPI
 
 /// The input object sent when someone is creating a new review
 public struct ReviewInput: InputObject {

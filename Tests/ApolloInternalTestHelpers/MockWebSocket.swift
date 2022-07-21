@@ -1,5 +1,5 @@
 import Foundation
-@testable import ApolloWebSocket
+@testable import NewApolloWebSocket
 
 public class MockWebSocket: WebSocketClient {
   

@@ -5,7 +5,7 @@ import ApolloAPI
 import Foundation
 
 public typealias ID = String
-public protocol SelectionSet: ApolloAPI.SelectionSet & RootSelectionSet
+public protocol SelectionSet: NewApolloAPI.SelectionSet & RootSelectionSet
 where Schema == UploadAPISchema {}
 
 public enum UploadAPISchema: SchemaConfiguration {

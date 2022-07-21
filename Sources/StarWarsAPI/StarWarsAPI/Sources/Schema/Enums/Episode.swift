@@ -1,7 +1,7 @@
 // @generated
 // This file was automatically generated and should not be edited.
 
-import ApolloAPI
+import NewApolloAPI
 
 /// The episodes in the Star Wars trilogy
 public enum Episode: String, EnumType {

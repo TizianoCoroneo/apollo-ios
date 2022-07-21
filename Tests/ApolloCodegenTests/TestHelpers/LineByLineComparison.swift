@@ -1,7 +1,7 @@
 import Foundation
 import Nimble
-import ApolloInternalTestHelpers
-import ApolloCodegenInternalTestHelpers
+import NewApolloInternalTestHelpers
+import NewApolloCodegenInternalTestHelpers
 
 /// A Nimble matcher that compares two strings line-by-line.
 ///

@@ -1,7 +1,7 @@
 // @generated
 //  This file was automatically generated and should not be edited.
 
-import Apollo
+import NewApollo
 import Foundation
 
 public enum SkinCovering: RawRepresentable, Equatable, Hashable, CaseIterable, Apollo.JSONDecodable, Apollo.JSONEncodable {

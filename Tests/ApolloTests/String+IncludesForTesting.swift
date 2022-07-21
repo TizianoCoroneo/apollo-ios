@@ -6,7 +6,7 @@
 //  Copyright © 2020 Apollo GraphQL. All rights reserved.
 //
 
-import ApolloUtils
+import NewApolloUtils
 import Foundation
 import XCTest
 

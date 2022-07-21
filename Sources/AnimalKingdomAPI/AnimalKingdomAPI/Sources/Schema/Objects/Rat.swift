@@ -1,7 +1,7 @@
 // @generated
 // This file was automatically generated and should not be edited.
 
-import ApolloAPI
+import NewApolloAPI
 
 public final class Rat: Object {
   override public class var __typename: StaticString { "Rat" }

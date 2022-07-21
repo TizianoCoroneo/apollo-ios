@@ -1,7 +1,7 @@
 // @generated
 // This file was automatically generated and should not be edited.
 
-import ApolloAPI
+import NewApolloAPI
 
 /// An autonomous mechanical character in the Star Wars universe
 public final class Droid: Object {

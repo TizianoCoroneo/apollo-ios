@@ -1,6 +1,6 @@
 import XCTest
-@testable import Apollo
-import ApolloInternalTestHelpers
+@testable import NewApollo
+import NewApolloInternalTestHelpers
 
 class ExecutionTests: XCTestCase {
   static let defaultWaitTimeout = 0.5

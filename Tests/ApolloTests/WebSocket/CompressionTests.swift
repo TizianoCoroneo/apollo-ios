@@ -12,7 +12,7 @@
 //  for WebSocket: https://tools.ietf.org/html/rfc7692
 
 import XCTest
-@testable import ApolloWebSocket
+@testable import NewApolloWebSocket
 
 class CompressionTests: XCTestCase {
 

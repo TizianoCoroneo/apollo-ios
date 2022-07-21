@@ -1,11 +1,11 @@
 // @generated
 //  This file was automatically generated and should not be edited.
 
-import Apollo
-import ApolloAPI
+import NewApollo
+import NewApolloAPI
 import Foundation
 
-public protocol SelectionSet: ApolloAPI.SelectionSet & RootSelectionSet
+public protocol SelectionSet: NewApolloAPI.SelectionSet & RootSelectionSet
 where Schema == GitHubAPITypeFactory {}
 
 public enum GitHubAPITypeFactory: SchemaConfiguration {

@@ -1,7 +1,7 @@
 import XCTest
-import ApolloInternalTestHelpers
-import ApolloCodegenInternalTestHelpers
-@testable import ApolloCodegenLib
+import NewApolloInternalTestHelpers
+import NewApolloCodegenInternalTestHelpers
+@testable import NewApolloCodegenLib
 
 class ApolloSchemaInternalTests: XCTestCase {
   func testFormatConversion_givenIntrospectionJSON_shouldOutputValidSDL() throws {

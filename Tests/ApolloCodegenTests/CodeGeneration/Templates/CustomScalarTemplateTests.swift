@@ -1,9 +1,9 @@
 import XCTest
 import Nimble
-@testable import ApolloCodegenLib
-import ApolloCodegenInternalTestHelpers
-import ApolloAPI
-import ApolloUtils
+@testable import NewApolloCodegenLib
+import NewApolloCodegenInternalTestHelpers
+import NewApolloAPI
+import NewApolloUtils
 
 class CustomScalarTemplateTests: XCTestCase {
   var subject: CustomScalarTemplate!

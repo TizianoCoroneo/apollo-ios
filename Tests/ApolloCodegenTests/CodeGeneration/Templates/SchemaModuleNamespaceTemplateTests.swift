@@ -1,7 +1,7 @@
 import XCTest
-@testable import ApolloCodegenLib
+@testable import NewApolloCodegenLib
 import Nimble
-import ApolloInternalTestHelpers
+import NewApolloInternalTestHelpers
 
 class SchemaModuleNamespaceTemplateTests: XCTestCase {
 

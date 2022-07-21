@@ -1,8 +1,8 @@
 import XCTest
 import Nimble
-@testable import Apollo
-import ApolloTestSupport
-import ApolloAPI
+@testable import NewApollo
+import NewApolloTestSupport
+import NewApolloAPI
 
 class TestMockTests: XCTestCase {
 

@@ -1,6 +1,6 @@
 import XCTest
 import Nimble
-import ApolloCodegenLib
+import NewApolloCodegenLib
 
 class ApolloCodegenConfigurationCodableTests: XCTestCase {
 

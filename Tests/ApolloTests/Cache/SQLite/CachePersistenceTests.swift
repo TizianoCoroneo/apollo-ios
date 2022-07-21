@@ -1,8 +1,8 @@
 import XCTest
-@testable import Apollo
-import ApolloAPI
-@testable import ApolloSQLite
-import ApolloInternalTestHelpers
+@testable import NewApollo
+import NewApolloAPI
+@testable import NewApolloSQLite
+import NewApolloInternalTestHelpers
 import SQLite
 import StarWarsAPI
 

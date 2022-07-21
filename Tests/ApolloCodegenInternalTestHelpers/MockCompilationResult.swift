@@ -1,4 +1,4 @@
-@testable import ApolloCodegenLib
+@testable import NewApolloCodegenLib
 
 public extension CompilationResult {
 

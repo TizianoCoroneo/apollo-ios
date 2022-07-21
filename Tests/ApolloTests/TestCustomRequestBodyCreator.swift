@@ -6,8 +6,8 @@
 //  Copyright © 2019 Apollo GraphQL. All rights reserved.
 //
 
-import Apollo
-import ApolloAPI
+import NewApollo
+import NewApolloAPI
 
 struct TestCustomRequestBodyCreator: RequestBodyCreator {
 

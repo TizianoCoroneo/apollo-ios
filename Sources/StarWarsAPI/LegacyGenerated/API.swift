@@ -1,7 +1,7 @@
 // @generated
 //  This file was automatically generated and should not be edited.
 #warning("TODO: Delete this file!")
-import Apollo
+import NewApollo
 import Foundation
 
 /// The episodes in the Star Wars trilogy

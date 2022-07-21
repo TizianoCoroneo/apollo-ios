@@ -1,7 +1,7 @@
 import XCTest
 import Nimble
 import OrderedCollections
-@testable import ApolloCodegenLib
+@testable import NewApolloCodegenLib
 
 class IRFieldCollectorTests: XCTestCase {
 

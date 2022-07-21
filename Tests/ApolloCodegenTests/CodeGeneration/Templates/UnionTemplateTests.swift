@@ -1,8 +1,8 @@
 import XCTest
 import Nimble
-@testable import ApolloCodegenLib
-import ApolloAPI
-import ApolloUtils
+@testable import NewApolloCodegenLib
+import NewApolloAPI
+import NewApolloUtils
 
 class UnionTemplateTests: XCTestCase {
   var subject: UnionTemplate!

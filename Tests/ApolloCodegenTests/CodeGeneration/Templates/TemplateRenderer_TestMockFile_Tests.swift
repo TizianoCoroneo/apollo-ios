@@ -1,7 +1,7 @@
 import XCTest
-@testable import ApolloCodegenLib
-@testable import ApolloCodegenInternalTestHelpers
-import ApolloUtils
+@testable import NewApolloCodegenLib
+@testable import NewApolloCodegenInternalTestHelpers
+import NewApolloUtils
 import Nimble
 
 class TemplateRenderer_TestMockFile_Tests: XCTestCase {
@@ -117,7 +117,7 @@ class TemplateRenderer_TestMockFile_Tests: XCTestCase {
 
     for test in tests {
       let expected = """
-      import ApolloTestSupport
+      import NewApolloTestSupport
       import \(test.importModuleName)
 
       """

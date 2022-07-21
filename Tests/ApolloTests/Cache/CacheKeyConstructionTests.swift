@@ -1,5 +1,5 @@
 import XCTest
-@testable import ApolloSQLite
+@testable import NewApolloSQLite
 
 final class CacheKeyConstructionTests: XCTestCase {
   func testCacheKeySplitsPeriods() {
