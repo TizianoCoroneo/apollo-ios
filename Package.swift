@@ -13,27 +13,27 @@ let package = Package(
   ],
   products: [
     .library(
-      name: "Apollo",
-      targets: ["Apollo"]),
+      name: "Apollo_Legacy",
+      targets: ["Apollo_Legacy"]),
     .library(
-      name: "ApolloAPI",
-      targets: ["ApolloAPI"]),
+      name: "ApolloAPI_Legacy",
+      targets: ["ApolloAPI_Legacy"]),
     .library(
-      name: "ApolloUtils",
-      targets: ["ApolloUtils"]),
+      name: "ApolloUtils_Legacy",
+      targets: ["ApolloUtils_Legacy"]),
     .library(
-      name: "Apollo-Dynamic",
+      name: "Apollo-Dynamic_Legacy",
       type: .dynamic,
-      targets: ["Apollo"]),
+      targets: ["Apollo_Legacy"]),
     .library(
-      name: "ApolloCodegenLib",
-      targets: ["ApolloCodegenLib"]),
+      name: "ApolloCodegenLib_Legacy",
+      targets: ["ApolloCodegenLib_Legacy"]),
     .library(
-      name: "ApolloSQLite",
-      targets: ["ApolloSQLite"]),
+      name: "ApolloSQLite_Legacy",
+      targets: ["ApolloSQLite_Legacy"]),
     .library(
-      name: "ApolloWebSocket",
-      targets: ["ApolloWebSocket"]),
+      name: "ApolloWebSocket_Legacy",
+      targets: ["ApolloWebSocket_Legacy"]),
   ],
   dependencies: [
     .package(
@@ -42,31 +42,31 @@ let package = Package(
   ],
   targets: [
     .target(
-      name: "Apollo",
+      name: "Apollo_Legacy",
       dependencies: [
-        "ApolloAPI",
-        "ApolloUtils"
+        "ApolloAPI_Legacy",
+        "ApolloUtils_Legacy"
       ],
       exclude: [
         "Info.plist"
       ]),
     .target(
-      name: "ApolloAPI",
+      name: "ApolloAPI_Legacy",
       dependencies: [],
       exclude: [
         "Info.plist",
         "CodegenV1"
       ]),
     .target(
-      name: "ApolloUtils",
+      name: "ApolloUtils_Legacy",
       dependencies: [],
       exclude: [
         "Info.plist"
       ]),
     .target(
-      name: "ApolloCodegenLib",
+      name: "ApolloCodegenLib_Legacy",
       dependencies: [
-        "ApolloUtils",
+        "ApolloUtils_Legacy",
       ],
       exclude: [
         "Info.plist",
@@ -77,19 +77,19 @@ let package = Package(
         .copy("Frontend/dist/ApolloCodegenFrontend.bundle.js.map")
       ]),
     .target(
-      name: "ApolloSQLite",
+      name: "ApolloSQLite_Legacy",
       dependencies: [
-        "Apollo",
+        "Apollo_Legacy",
         .product(name: "SQLite", package: "SQLite.swift"),
       ],
       exclude: [
         "Info.plist"
       ]),
     .target(
-      name: "ApolloWebSocket",
+      name: "ApolloWebSocket_Legacy",
       dependencies: [
-        "Apollo",
-        "ApolloUtils"
+        "Apollo_Legacy",
+        "ApolloUtils_Legacy"
       ],
       exclude: [
         "Info.plist"
