@@ -30,7 +30,15 @@ public class GraphQLSchema: JavaScriptObject {
 }
 
 public class GraphQLNamedType: JavaScriptObject, Hashable {
-  lazy var name: String = self["name"]
+  lazy var name: String = {
+    let result: String = self["name"]
+
+    if result == "Error" {
+      return "_Error"
+    } else {
+      return result
+    }
+  }()
 
   lazy var documentation: String? = self["description"]
 
